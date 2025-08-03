@@ -1,7 +1,18 @@
 # DistilBERT Emotion Classifier  
-Fine-tune **distilBERT-base-uncased** on the `dair-ai/emotion` (English Tweets) dataset (6 labels) for lightweight, real-time emotion recognition.
+Fine-tune **distilbert-base-uncased** on the `dair-ai/emotion` (English Tweets) dataset (6 labels) for lightweight, real-time emotion recognition.
+
+## Classes
 
 | sadness | joy | love | anger | fear | surprise |
+
+## Training results
+
+| Training Loss | Epoch | Step | Validation Loss | Accuracy |
+|:-------------:|:-----:|:----:|:---------------:|:--------:|
+| No log        | 1.0   | 125  | 0.2232          | 0.9215   |
+| No log        | 2.0   | 250  | 0.1552          | 0.9385   |
+| No log        | 3.0   | 375  | 0.1469          | 0.9375   |
+| 0.2724        | 4.0   | 500  | 0.1395          | 0.933    |
 
 ## Quick Demo
 ```python
@@ -9,7 +20,7 @@ from transformers import pipeline
 classifier = pipeline(
     task="text-classification",
     model="mehmet0sahinn/distilbert-emotion",
-    top_k=None         # return all labels
+    top_k=None
 )
 
 text = "I'm absolutely thrilled this works like a charm!"
@@ -20,9 +31,9 @@ print(classifier(text))
 
 - Source: [dair-ai/emotion](https://huggingface.co/datasets/dair-ai/emotion)
 - Language: English
-- Train Size: 16,000
-- Validation Size: 2,000
-- Test Size: 2,000
+- Train Size: 16K
+- Validation Size: 2K
+- Test Size: 2K
 
 ## Resources
 
