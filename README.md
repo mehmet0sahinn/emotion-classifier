@@ -1,9 +1,10 @@
 # DistilBERT Emotion Classifier  
-Fine-tune **distilbert-base-uncased** on the `dair-ai/emotion` (English Tweets) dataset (6 labels) for lightweight, real-time emotion recognition.
+
+Fine-tune **distilbert-base-uncased** on the [dair-ai/emotion](https://huggingface.co/datasets/dair-ai/emotion) (English Tweets) dataset (6 labels) for lightweight emotion recognition.
 
 ## Classes
 
-| sadness | joy | love | anger | fear | surprise |
+|    SADNESS    |      JOY      |      LOVE     |     ANGER     |      FEAR     |    SURPRISE   |
 
 ## Training results
 
