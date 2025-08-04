@@ -1,4 +1,4 @@
-# DistilBERT Emotion Classifier  
+# Emotion Classifier 
 
 This repository fine-tunes **distilbert-base-uncased** on the [dair-ai/emotion](https://huggingface.co/datasets/dair-ai/emotion) (Labeled English Tweets) dataset for lightweight emotion recognition.
 
