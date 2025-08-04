@@ -46,10 +46,4 @@ print(classifier(text))
 ## Resources
 
 - [Hugging Face Model](https://huggingface.co/mehmet0sahinn/distilbert-emotion)
-- [Kaggle Notebook](https://www.kaggle.com/code/mehmet0sahinn/distilbert-emotion-classifier)
-
----
-
-## License
-
-This repository is licensed under the MIT License.
+- [Kaggle Notebook](https://www.kaggle.com/code/mehmet0sahinn/emotion-classifier)
